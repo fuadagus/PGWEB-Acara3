@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Calculator</title>
+    <style>
+        body{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+      <div class="card mt-5 shadow">
+        <div class="card-header text-center">
+            <h1 class="text-primary" >
+                CALCULATOR
+            </h1>
+        </div>
+        <div class="card-body">
+            <div class="mb-3">
+                <label for="nilai1" class="form-label">Masukkan nilai 1</label>
+                <input type="number" class="form-control" id="nilai1" placeholder="100 200 300 atau angka berapapun terserah" value="0">
+              </div>
+            <div class="mb-3">
+                <label for="nilai2" class="form-label">Masukkan nilai 2</label>
+                <input type="number" class="form-control" id="nilai2" placeholder="100 200 300 atau angka berapapun terserah juga" value="0">
+              </div>
+            <div class="mb-3 text-center">
+                <button type="button" class="btn btn-primary" onclick="plus()">
+                    <i class="fa-solid fa-plus"></i>
+                </button>
+                <button type="button" class="btn btn-danger" onclick="minus()">
+                    <i class="fa-solid fa-circle-minus"></i>
+                </button>
+                <button type="button" class="btn btn-warning" onclick="times()">
+                    <i class="fa-regular fa-circle-xmark"></i>
+                </button>
+                <button type="button" class="btn btn-secondary" onclick="divide()">
+                    <i class="fa-solid fa-divide"></i>
+                </button>
+                <hr>
+                <div class="text-center">
+                    <h3>Hasil</h3>
+                    <h1 id="hasil" class="text-success"></h1>
+                    
+                    <h4 id="teks-hasil"></h4>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <small class="text-success">fuadagussalim@2023</small>
+      </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    
+    
+    function plus(){
+        let n1 = document.getElementById("nilai1").value;
+        let n2 = document.getElementById("nilai2").value;
+        var hasilDOM =  document.getElementById("hasil");
+        var teksHasilDOM = document.getElementById("teks-hasil")
+
+        let hasil = parseFloat(n1) + parseFloat(n2);
+        console.log(hasil);
+        hasilDOM.innerHTML = hasil;
+        teksHasilDOM.innerHTML = n1 + " ditambah dengan " + n2 + " adalah " + hasil;
+    }
+    function minus(){
+        let n1 = document.getElementById("nilai1").value;
+        let n2 = document.getElementById("nilai2").value;
+        var hasilDOM =  document.getElementById("hasil");
+        let hasil = parseFloat(n1) - parseFloat(n2);
+        console.log(hasil);
+        hasilDOM.innerHTML = hasil;
+        var teksHasilDOM = document.getElementById("teks-hasil")
+        teksHasilDOM.innerHTML = n1 + " dikurang dengan " + n2 + " adalah " + hasil;
+    }
+    function divide(){
+        let n1 = document.getElementById("nilai1").value;
+        let n2 = document.getElementById("nilai2").value;
+        var hasilDOM =  document.getElementById("hasil");
+        let hasil = parseFloat(n1) / parseFloat(n2);
+        console.log(hasil);
+        hasilDOM.innerHTML = hasil;
+        var teksHasilDOM = document.getElementById("teks-hasil")
+        teksHasilDOM.innerHTML = n1 + " dibagi dengan " + n2 + " adalah " + hasil;
+    }
+    function times(){
+        let n1 = document.getElementById("nilai1").value;
+        let n2 = document.getElementById("nilai2").value;
+        var hasilDOM =  document.getElementById("hasil");
+        let hasil = parseFloat(n1) * parseFloat(n2);
+        console.log(hasil);
+        hasilDOM.innerHTML = hasil;
+        var teksHasilDOM = document.getElementById("teks-hasil")
+        teksHasilDOM.innerHTML = n1 + " dikali dengan " + n2 + " adalah " + hasil;
+    }
+     
+
+     
+
+    </script>
+</body>
+</html>
