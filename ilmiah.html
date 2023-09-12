@@ -12,6 +12,10 @@
 			referrerpolicy="no-referrer">
 	</script>
     <style>
+		body{
+			padding: 20px;
+			background-image: image-set("https://www.s4d4c.eu/wp-content/uploads/2020/12/geography-1000x667.jpg");
+		}
         table {
 	border: 1px solid black;
 	margin-left: auto;
@@ -21,7 +25,7 @@
 input[type="button"] {
 	width: 100%;
 	padding: 20px 40px;
-	background-color: green;
+	background-color: rgb(20, 4, 248);
 	color: white;
 	font-size: 24px;
 	font-weight: bold;
@@ -47,6 +51,29 @@ display {
 </head>
 
 <body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Kalkulator</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                   
+                    <li class="nav-item">
+                        <a class="nav-link" href="sedehana.html">Kalkulator sederhana</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ilmiah.html">Kalkulator ilmiah</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="konverter.html">Konverter</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 	<h1 style="color: green; text-align: center;">
 		Scientific Calculator</h1>
 	<form>
