@@ -1,0 +1,48 @@
+/* CSS untuk latar belakang peta */
+#map {
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang transparan */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    margin-top: 20px;
+    width: 30%;
+}
+/* CSS untuk container */
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang transparan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    margin: 20px;
+    width: 60%;
+}
+
+/* CSS untuk judul */
+h2 {
+    color: #333; /* Warna teks yang lebih gelap */
+    font-size: 24px;
+}
+
+/* CSS untuk tombol */
+.btn-primary {
+    background-color: #007bff; /* Warna tombol utama */
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Warna tombol saat dihover */
+}
+body{
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: image-set("https://www.s4d4c.eu/wp-content/uploads/2020/12/geography-1000x667.jpg");
+}
+
+.parent{
+    display: flex;
+    
+}
+nav{
+    position: absolute;
+    z-index: 2;
+}
